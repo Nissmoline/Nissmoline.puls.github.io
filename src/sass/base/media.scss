@@ -1,15 +1,102 @@
 @media (max-width: 1200px) {
-
+    .container {
+        max-width: 880px;
+    }
 }
 
 @media (max-width: 991px) {
+    .container {
+        max-width: 707px;
+    }
 
+    .header {
+        max-width: 707px;
+        margin: 0 auto;
+    }
+
+    .promo {
+        &__header {
+            font-size: 35px;
+        }
+
+        &__subheader {
+            font-size: 20px;
+        }
+
+        &__icon {
+            font-size: 12px;
+
+            img {
+                width: 35%;
+            }
+        }
+
+        .button {
+            &_main {
+                width: 240px;
+                height: 40px;
+                font-size: 12px;
+            }
+        }
+
+        &__link {
+            font-size: 13px;
+        }
+    }
+
+    .benefits {
+        &__header {
+            font-size: 25px;
+        }
+
+        &__inform {
+            width: 201px;
+
+            img {
+                width: 33%;
+            }
+        }
+
+        &__headline {
+            font-size: 17px;
+            margin-top: 30px;
+        }
+
+        &__descr {
+            font-size: 13px;
+            margin-top: 20px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
+    .container {
+        padding: 0 30px;
+    }
 
+    .header {
+        &__logo {
+            width: 134px;
+        }
+
+        &__official {
+            font-size: 10px;
+
+            span {
+                font-size: 11px;
+            }
+        }
+
+        .button {
+            width: 100px;
+            height: 30px;
+            font-size: 9px;
+        }
+
+        &__phone {
+            display: none;
+        }
+    }
 }
 
-@media (max-width: 575px) {
-    
-}
+@media (max-width: 575px) {}
