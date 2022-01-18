@@ -32,7 +32,7 @@
         transform: skewX(-25deg);
         margin: 0 5px;
         cursor: pointer;
-        transition: 0.5s all;
+        transition: 0.7s all;
 
         &:hover {
             box-shadow: 3px 3px 20px $main-color;
@@ -142,7 +142,7 @@
             width: 50%;
             margin-right: 0px;
             transform: translateX(-100%);
-            transition: 0.5s all;
+            transition: 0.7s all;
 
             &_active {
                 transform: translateX(0%);
@@ -156,7 +156,7 @@
             margin-left: 20px;
             transform: translateX(0%);
             padding-right: 20px;
-            transition: 0.5s all;
+            transition: 0.7s all;
             padding-left: 19px;
             margin-bottom: 0;
             list-style-type: none;
