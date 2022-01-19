@@ -1,0 +1,30 @@
+.feedback {
+    display: block; 
+    padding: 100px 70px;
+
+    &__title {
+        color: #0d0d0d;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+        img{
+            width: 100%; 
+        }
+       }
+    &__wrapper {
+        display: flex; 
+        justify-content: space-around;
+      
+    }
+    &__costumer {
+        margin-left: 62px;
+    }
+}
