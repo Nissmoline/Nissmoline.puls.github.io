@@ -120,12 +120,13 @@
 @media (max-width: 950px) {
     .carousel {
         &__inner {
-            width: 600px; 
+            width: 600px;
             margin-left: 50%;
             transform: translateX(-50%);
-            
+
         }
     }
+
     .catalog {
         &__tabs {
             display: flex;
@@ -215,14 +216,17 @@
             margin-top: 20px;
         }
     }
+
     .carousel {
         &__inner {
-            width: 510px; 
+            width: 510px;
+
             .slick-dots {
                 button {
                     width: 7px;
                     height: 7px;
                 }
+
                 li.slick-active button {
                     width: 12px;
                     height: 12px;
@@ -231,7 +235,31 @@
             }
         }
     }
+
+    .feedback {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__wrapper {
+            display: block;
+        }
+
+        &__costumer {
+            margin: 0 auto;
+            &_desc {
+                 max-width: 650px;
+            }
+            &_title {
+                margin-top: 16px;
+                text-align: center;
+            }
+        }
+
+    }
 }
+
 
 
 
@@ -247,6 +275,7 @@
             font-size: 15px;
         }
     }
+
     .carousel {
         &__inner {
             width: 500px;
@@ -300,22 +329,27 @@
             font-size: 11px;
         }
     }
+
     .carousel {
         &__inner {
-           width: 300px ; 
+            width: 300px;
         }
     }
+
     .catalog {
         &__title {
             font-size: 25px;
         }
+
         &__tab {
             width: 260px;
         }
+
         .catalog-item {
             &__price {
-            font-size: 15px;
+                font-size: 15px;
             }
+
             &__old-price {
                 font-size: 12px;
             }

@@ -1,5 +1,6 @@
 .feedback {
-    display: block; 
+    background-color: #f5f5f5;
+    display: block;
     padding: 100px 70px;
 
     &__title {
@@ -12,19 +13,62 @@
         text-align: center;
         text-transform: uppercase;
     }
+
     &__img {
         width: 169px;
         height: 169px;
-        img{
-            width: 100%; 
+
+        img {
+            width: 100%;
         }
-       }
-    &__wrapper {
-        display: flex; 
-        justify-content: space-around;
-      
     }
+
+    &__wrapper {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 48px;
+    }
+
     &__costumer {
         margin-left: 62px;
     }
+
+    &__costumer_title {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+
+        span {
+            color: #646464;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+
+        }
+    }
+
+    &__costumer_descr {
+        margin-top: 19px;
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+
+    hr {
+        max-width: 940px;
+        height: 1px;
+        background-color: #f6f6f6;
+    }
+
 }
