@@ -68,7 +68,7 @@ toggleSlide ('.catalog-item__back');
     $('.modal__close').on('click', function(){
         $('.overlay, #consultation, #order, #thanks_title').fadeOut('slow')
     })
-    // function chanje text and butto buy in catalog
+    // function chanje text in catalog
     $('.button_mini').each(function(i) {
         $(this).on('click', function() {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
@@ -76,4 +76,39 @@ toggleSlide ('.catalog-item__back');
             $('.overlay, #order').fadeIn('slow')
         });
     });
+
+    
+
+
+    function validateForms (form) {
+        $(form).validate({ 
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                  },
+                phone:"required",
+                email:{
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйсто введите своё имя",
+                    minlength: jQuery.validator.format("Введите миниму  {0} символа")
+                  },
+                phone: "Напишите свой номер телефона",
+                email: {
+                  required: "Укажите свой email адресс",
+                  email: "Неправильный формат, пример: name@domain.com"
+                }
+              }
+        });
+    };
+
+    validateForms ('#consultation-form');
+    validateForms ('#consultation form');
+    validateForms ('#order form'); 
+    
   });
