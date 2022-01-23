@@ -60,4 +60,20 @@ $(document).ready(function(){
 toggleSlide ('.catalog-item__link');
 toggleSlide ('.catalog-item__back');
 
+    // Modal Windows 
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    //Close modal windows
+    $('.modal__close').on('click', function(){
+        $('.overlay, #consultation, #order, #thanks_title').fadeOut('slow')
+    })
+    // function chanje text and butto buy in catalog
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            // button buy catalog
+            $('.overlay, #order').fadeIn('slow')
+        });
+    });
   });

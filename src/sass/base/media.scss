@@ -390,6 +390,15 @@
                 }
             }
         }
+        .modal {
+            text-align: center;
+            width: 340px;  
+            padding: 27px 27px 0 21px;
+            &__close {
+                top: 10px;
+                right: 5px;
+            }
+        }
 
     }
 
