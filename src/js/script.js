@@ -66,19 +66,16 @@ toggleSlide ('.catalog-item__back');
     });
     //Close modal windows
     $('.modal__close').on('click', function(){
-        $('.overlay, #consultation, #order, #thanks_title').fadeOut('slow')
-    })
+        $('.overlay, #consultation, #order, #thanks_title').fadeOut('slow');
+    });
     // function chanje text in catalog
     $('.button_mini').each(function(i) {
         $(this).on('click', function() {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
             // button buy catalog
-            $('.overlay, #order').fadeIn('slow')
+            $('.overlay, #order').fadeIn('slow');
         });
     });
-
-    
-
 
     function validateForms (form) {
         $(form).validate({ 
@@ -105,10 +102,30 @@ toggleSlide ('.catalog-item__back');
                 }
               }
         });
-    };
+    }
 
     validateForms ('#consultation-form');
     validateForms ('#consultation form');
     validateForms ('#order form'); 
+
+    $('form').submit(function(e){
+        e.preventDefault(); 
+
+        if(!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: 'mailer/smart.php',
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+        
+
+            $('form').trigger('reset');
+        });
+        return false; 
+    });
     
   });

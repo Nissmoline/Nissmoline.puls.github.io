@@ -1,0 +1,241 @@
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 50px; }
+
+  .catalog__content {
+    margin: 60px 80px; }
+
+  .footer__info {
+    padding: 30px 60px 30px 60px;
+    width: 405px;
+    height: 205px; }
+  .footer__addr {
+    font-size: 16px;
+    margin-bottom: 24px; }
+  .footer__phone {
+    font-size: 16px;
+    margin-bottom: 24px; } }
+@media (max-width: 1200px) and (max-width: 991px) {
+  .container {
+    padding: 0 45px; }
+
+  .header {
+    margin: 0 auto; }
+
+  .promo__header {
+    font-size: 35px; }
+  .promo__subheader {
+    font-size: 20px; }
+  .promo__icon {
+    font-size: 12px; }
+    .promo__icon img {
+      width: 35%; }
+  .promo .button_main {
+    width: 240px;
+    height: 40px;
+    font-size: 12px; }
+  .promo__link {
+    font-size: 13px; }
+
+  .benefits__wrapper {
+    margin-top: 15px; }
+  .benefits__header {
+    font-size: 25px; }
+  .benefits__inform {
+    width: 201px; }
+    .benefits__inform img {
+      width: 33%; }
+  .benefits__headline {
+    font-size: 17px;
+    margin-top: 30px; }
+  .benefits__descr {
+    font-size: 13px;
+    margin-top: 20px; }
+
+  .consultation {
+    padding: 103px 0 92px 25px; }
+
+  .carousel__inner .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    cursor: pointer; }
+    .carousel__inner .slick-dots li {
+      margin: 0 15px; }
+    .carousel__inner .slick-dots button {
+      font-size: 0;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      border: none;
+      border-radius: 100%;
+      background-color: #afb4b4;
+      transition: 0.7s all; }
+    .carousel__inner .slick-dots li.slick-active button {
+      background-color: #c70101;
+      width: 16px;
+      height: 16px;
+      box-shadow: 0px 0px 10px 5px #c70101; } }
+@media (max-width: 1200px) and (max-width: 950px) {
+  .carousel__inner {
+    width: 600px;
+    margin-left: 50%;
+    transform: translateX(-50%); }
+
+  .catalog__tabs {
+    display: flex;
+    flex-direction: column; }
+  .catalog__tab {
+    width: 330px;
+    margin-bottom: 14px; }
+  .catalog__content {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto; } }
+@media (max-width: 1200px) and (max-width: 768px) {
+  .container {
+    padding: 0 40px; }
+
+  .header__logo {
+    width: 170px; }
+  .header__official {
+    font-size: 10px; }
+    .header__official span {
+      font-size: 11px; }
+  .header .button {
+    width: 100px;
+    height: 30px;
+    font-size: 9px; }
+  .header__phone {
+    display: none; }
+
+  .promo__icons {
+    width: 370px; }
+
+  .benefits__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center; }
+  .benefits__inform img {
+    margin-top: 28px; }
+  .benefits__headline {
+    margin-top: 5px; }
+  .benefits__descr {
+    margin-top: 10px; }
+
+  .consultation {
+    padding: 80px 0 70px 25px; }
+    .consultation .title {
+      font-size: 35px; }
+    .consultation__descr {
+      margin-top: 20px; }
+
+  .carousel__inner {
+    width: 510px; }
+    .carousel__inner .slick-dots button {
+      width: 7px;
+      height: 7px; }
+    .carousel__inner .slick-dots li.slick-active button {
+      width: 12px;
+      height: 12px;
+      box-shadow: 0px 0px 10px 3px #c70101; }
+
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .feedback__wrapper {
+      display: block; }
+    .feedback__costumer {
+      margin: 0 auto; }
+      .feedback__costumer_desc {
+        max-width: 650px; }
+      .feedback__costumer_title {
+        margin-top: 16px;
+        text-align: center; } }
+@media (max-width: 1200px) and (max-width: 600px) {
+  .consultation .title {
+    font-size: 20px; }
+  .consultation__descr {
+    font-size: 15px; }
+
+  .carousel__inner {
+    width: 500px; } }
+@media (max-width: 1200px) and (max-width: 575px) {
+  .container {
+    padding: 0 30px; }
+
+  .header__logo {
+    width: 150px; }
+  .header__official {
+    display: none; }
+
+  .promo__header {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px; }
+  .promo__subheader {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 23px; }
+  .promo__icons {
+    width: 286px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .promo .button_main {
+    width: 200px; }
+  .promo__link {
+    font-size: 11px; }
+
+  .carousel__inner {
+    width: 300px; }
+
+  .catalog__title {
+    font-size: 25px; }
+  .catalog__tab {
+    width: 260px; }
+  .catalog .catalog-item__price {
+    font-size: 15px; }
+  .catalog .catalog-item__old-price {
+    font-size: 12px; }
+
+  .footer__info {
+    padding: 33px;
+    width: 350px;
+    height: 180px; }
+  .footer__socaial-item {
+    width: 39px;
+    height: 39px; }
+    .footer__socaial-item img {
+      height: 20px; }
+
+  .modal {
+    text-align: center;
+    width: 340px;
+    padding: 27px 27px 0 21px; }
+    .modal__close {
+      top: 10px;
+      right: 5px; } }
+@media (max-width: 1200px) and (max-width: 375px) {
+  .consultation {
+    padding: 80px 0 70px 0px; }
+    .consultation .title {
+      font-size: 18px;
+      text-align: center; }
+    .consultation__descr {
+      font-size: 13px;
+      text-align: center; }
+    .consultation .feed-form {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%; } }
+
+/*# sourceMappingURL=media.css.map */

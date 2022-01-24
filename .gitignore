@@ -8,6 +8,7 @@
 
 # production
 /build
+dist/mailer/smart.php
 
 # misc
 .DS_Store
