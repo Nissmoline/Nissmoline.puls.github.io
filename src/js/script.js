@@ -77,6 +77,9 @@ toggleSlide ('.catalog-item__back');
         });
     });
 
+    
+
+
     function validateForms (form) {
         $(form).validate({ 
             rules: {
@@ -108,6 +111,8 @@ toggleSlide ('.catalog-item__back');
     validateForms ('#consultation form');
     validateForms ('#order form'); 
 
+
+    //ajax for mail submit 
     $('form').submit(function(e){
         e.preventDefault(); 
 
@@ -121,8 +126,8 @@ toggleSlide ('.catalog-item__back');
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-        
-
+            $('#consultation, #order').fadeOut();
+            $('#overlay, #thanks_title').fadeIn('slow'); 
             $('form').trigger('reset');
         });
         return false; 
