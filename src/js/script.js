@@ -132,5 +132,23 @@ toggleSlide ('.catalog-item__back');
         });
         return false; 
     });
-    
+    // row up scroll and pageup 
+    $(window).scroll(function() {
+        if($(this).scrollTop()>1400) {
+           $('.rowup').fadeIn();  
+        } else {
+            $('.rowup').fadeOut(); 
+        }
+    });
+    $(".rowup").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        } // End if
+      });
   });
