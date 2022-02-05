@@ -132,7 +132,7 @@ toggleSlide ('.catalog-item__back');
         });
         return false; 
     });
-    // row up scroll and pageup 
+   // Add smooth scrolling to all links
     $(window).scroll(function() {
         if($(this).scrollTop()>1400) {
            $('.rowup').fadeIn();  

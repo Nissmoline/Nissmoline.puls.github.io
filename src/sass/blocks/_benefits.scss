@@ -33,4 +33,16 @@
         font-weight: 300;
         margin-top: 26px;
     }
+    &__img {
+        &_animated{
+            /* animation-name: haert; 
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: paused; */
+            &:hover {
+                animation: haert  1.5s ease infinite; 
+               /*  animation-iteration-count: infinite; */
+            }
+        }
+    }
 }
