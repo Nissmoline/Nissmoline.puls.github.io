@@ -151,4 +151,5 @@ toggleSlide ('.catalog-item__back');
           });
         } // End if
       });
+      new WOW().init();
   });
